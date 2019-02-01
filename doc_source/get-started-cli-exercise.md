@@ -2,12 +2,6 @@
 
 Now you can test the speech synthesis offered by Amazon Polly\. In this exercise, you call the `SynthesizeSpeech` operation by passing in sample text\. You can save the resulting audio as a file and verify its content\. 
 
-If you specified one of the Amazon Polly supported regions when you configured the AWS CLI, you can omit the following line from the AWS CLI code examples\. If you specified a region not supported by Amazon Polly in your AWS CLI configuration \(for example, if you're an existing AWS customer using other services in regions that don't support Amazon Polly\), you must include the following line: 
-
-```
---region polly-supported-aws-region
-```
-
 1. Run the `synthesize-speech` AWS CLI command to synthesize sample text to an audio file \(`hello.mp3`\)\. 
 
    The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -69,7 +63,7 @@ If you specified one of the Amazon Polly supported regions when you configured t
        --language-code pt-BR
    ```
 
-   For a list of language codes, see [DescribeVoices](API_DescribeVoices.md)\. These language codes are W3C language identification tags \(*ISO 639 code for the language name*\-*ISO 3166 country code*\)\. For example, en\-US \(US English\), en\-GB \(British English\), and es\-ES \(Spanish\), etc\. 
+   For a list of language codes, see [Languages Supported by Amazon Polly](SupportedLanguage.md)\. These language codes are W3C language identification tags \(*ISO 639 code for the language name*\-*ISO 3166 country code*\)\. For example, en\-US \(US English\), en\-GB \(British English\), and es\-ES \(Spanish\), etc\. 
 
    You can also use the `help` option in the AWS CLI to get the list of language codes:
 

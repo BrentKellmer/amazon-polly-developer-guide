@@ -4,8 +4,7 @@
 
 For example, combining the metadata with the audio stream from your text can enable to you synchronize speech with facial animation \(lip\-syncing\) or to highlight written words as they're spoken\.
 
-
+**Topics**
 + [Speech Mark Types](using-speechmarks1.md)
 + [Using Speech Marks](using-speechmarks.md)
 + [Requesting Speech Marks Using the Amazon Polly Console](speechmarksconsole.md)
-+ [Phoneme/Viseme Tables for Supported Languages](ref-phoneme-tables-shell.md)

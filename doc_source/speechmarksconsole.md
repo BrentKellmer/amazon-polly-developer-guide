@@ -26,7 +26,7 @@ Downloading MP3, OGG, or PCM formats will not generate speech marks\.
 
 1. For **File Format**, choose **Speech Marks**\. 
 
-1. For **Speech Mark Types**, choose the types of speech marks to generate\. The option to choose **SSML** metadata is only available on the **SSML** tab\. For more information on using SSML with Amazon Polly see [Using SSML](ssml.md)\. 
+1. For **Speech Mark Types**, choose the types of speech marks to generate\. The option to choose **SSML** metadata is only available on the **SSML** tab\. For more information on using SSML with Amazon Polly see [Generating Speech from SSML Documents](ssml.md)\. 
 
 1. Choose **Change**\. 
 

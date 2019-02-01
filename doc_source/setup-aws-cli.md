@@ -8,12 +8,10 @@ You don't need the AWS CLI to perform the steps in this Getting Started exercise
 **To set up the AWS CLI**
 
 1. Download and configure the AWS CLI\. For instructions, see the following topics in the *AWS Command Line Interface User Guide*: 
+   + [Getting Set Up with the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html)
+   + [Configuring the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
-   + [Getting Set Up with the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html)
-
-   + [Configuring the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
-
-1. Add a named profile for the administrator user in the AWS CLI config file\. You use this profile when executing the AWS CLI commands\. For more information about named profiles, see [Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-multiple-profiles) in the *AWS Command Line Interface User Guide*\.
+1. Add a named profile for the administrator user in the AWS CLI config file\. You use this profile when executing the AWS CLI commands\. For more information about named profiles, see [Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-multiple-profiles) in the *AWS Command Line Interface User Guide*\.
 
    ```
    [profile adminuser]
@@ -22,12 +20,12 @@ You don't need the AWS CLI to perform the steps in this Getting Started exercise
        region = aws-region
    ```
 
-   For a list of available AWS Regions and those supported by Amazon Polly, see [Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html) in the *Amazon Web Services General Reference*\.
-
-   If you specify one of the Amazon Polly supported regions when you configure the AWS CLI, you can omit the following line from the AWS CLI code examples\. If you specify a region not supported by Amazon Polly in your AWS CLI configuration \(for example, if you're an existing AWS customer using other services in regions that don't support Amazon Polly\), you must include the following line: 
+   For a list of available AWS Regions and those supported by Amazon Polly, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *Amazon Web Services General Reference*\.
+**Note**  
+If you're using the Amazon Polly supported region you specified when you configured the AWS CLI, you can omit the following line from the AWS CLI code examples:   
 
    ```
-   --region polly-supported-aws-region
+   --region aws-region
    ```
 
 1. Verify the setup by typing the following help command at the command prompt: 
@@ -48,13 +46,13 @@ If you have previously downloaded and configured the AWS CLI, Amazon Polly may n
    aws polly help
    ```
 
-   If a description of Amazon Polly and a list of valid commands is displayed, appears in the AWS CLI window\. If Amazon Polly is available in the AWS CLI and can be used immediately\. In this case, you can skip the remainder of this procedure\. If this is not displayed, continue with Step 2\.
+   If a description of Amazon Polly and a list of valid commands is displayed, appears in the AWS CLI window, Amazon Polly is available in the AWS CLI and can be used immediately\. In this case, you can skip the remainder of this procedure\. If this is not displayed, continue with Step 2\.
 
 1. Use one of the two following options to enable Amazon Polly:
 
    1. Uninstall and reinstall the AWS CLI\.
 
-      For instructions, see the following topic in the *AWS Command Line Interface User Guide*: [Installing the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)\.
+      For instructions, see the following topic in the *AWS Command Line Interface User Guide*: [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\.
 
       or
 

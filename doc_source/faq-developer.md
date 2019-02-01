@@ -2,23 +2,38 @@
 
 This topic provides answers to questions that are commonly asked about Amazon Polly\.
 
-
+**Topics**
 + [General Questions](#faqs-general)
 + [Content Rendering](#faqs-render)
-+ [Voices](#faqs-voices)
 + [Data Security and Confidentiality](#faqs-security)
 
 ## General Questions<a name="faqs-general"></a>
 
+**Q: I have texts that use several different encoding standards\. Which standard can I use with Amazon Polly?**
+
+Currently, Amazon Polly only supports the UTF\-8 encoding standard\.
+
 **Q: Can I save the synthesized speech?**
 
-You can save the output of the synthesis for use on your own system\. You can also call Amazon Polly, and then encrypt the file with any encryption key and store it in Amazon Simple Storage Service \(Amazon S3\) or any other secure storage\. The Amazon Polly `SynthesizeSpeech` call is stateless and is not associated with a customer identity\. You can't retrieve it from Amazon Polly later\.
+When you use the `SynthesizeSpeech` operation, you can save the output of the synthesis for use on your own system\. You can also call Amazon Polly, and then encrypt the file with any encryption key and store it in Amazon Simple Storage Service \(Amazon S3\) or any other secure storage\. The Amazon Polly `SynthesizeSpeech` call is stateless and is not associated with a customer identity\. You can't retrieve it from Amazon Polly later\.
+
+When you use the `StartSpeechSynthesisTask` operation \(asynchronous synthesis\), the output of the synthesis is automatically stored in an Amazon S3 bucket\. You can then retrieve it at need\. For more information on this, see [Creating Long Audio Files](asynchronous.md)\. 
 
 ## Content Rendering<a name="faqs-render"></a>
 
+ **Q: I would like to use the same voice in two different languages\. Are there any bilingual voices?** 
+
+Currently, only one voice is bilingual: Aditi \(Hindi and Indian English\)\. Using a bilingual voice enables you to synthesize speech that includes either language by itself, or both within a single text\. With Aditi, Amazon Polly can also synthesize speech when it contains both Devangari \(Hindi script\) and Romanagari \(Latin script\)\.
+
+We are constantly working to improve Amazon Polly's language options, including increasing the number of bilingual voices\. For more information, see [Bilingual Voices](bilingual-voices.md)
+
+**Q: What `pcm` details are used when pcm is selected as an output format?**
+
+When `pcm` is used, the content returned is `audio/pcm` in a signed 16\-bit, 1 channel \(mono\), little\-endian format\.
+
 **Q: Some of my text coming out with the stress on the wrong syllable when it is spoken by Amazon Polly\. I've even tried using an acute accent \(U\+0301\) to mark the stress but it is still on the wrong syllable\. How can I fix this?**
 
-Amazon Polly doesn't currently recognize an acute accent \(U\+0301\) as indicating syllable stress in a word\. However, there are two ways you can change the stress in a word\. You can use an IPA phone and ssml tags to alter the pronunciation of the word\. For more information, see [SSML Tags in Amazon Polly](supported-ssml.md)\. In some languages, you can also use an apostrophe immediately after the syllable to indicate a change in stress\. For instance, in Russian, the words страны́ and стра́ны have different stresses \(marked here with an acute accent\)\. However, because of the identical spelling, Amazon Polly will pronounce them both with the stress on the final syllable, according to standard language usage\. You can use an apostrophe to mark the alternatively stressed syllable, as in стран'ы, and the Amazon Polly will stress the correct syllable\. 
+Amazon Polly doesn't currently recognize an acute accent \(U\+0301\) as indicating syllable stress in a word\. However, there are two ways you can change the stress in a word\. You can use an IPA phone and ssml tags to alter the pronunciation of the word\. For more information, see [SSML Tags Supported by Amazon Polly](supported-ssml.md)\. In some languages, you can also use an apostrophe immediately after the syllable to indicate a change in stress\. For instance, in Russian, the words страны́ and стра́ны have different stresses \(marked here with an acute accent\)\. However, because of the identical spelling, Amazon Polly will pronounce them both with the stress on the final syllable, according to standard language usage\. You can use an apostrophe to mark the alternatively stressed syllable, as in стран'ы, and the Amazon Polly will stress the correct syllable\. 
 
  **Q: When I use bullet points in my text, Amazon Polly doesn't render them correctly\. It says "minus" every time it encounters one\. What do I do?** 
 
@@ -34,19 +49,13 @@ This is based in how the Unix Shell handles Unicode and isn't a Amazon Polly\-sp
 
 **Q: When I try to synthesize text from a source containing International Phonetic Alphabet \(IPA\) symbols, Amazon Polly doesn't recognize them and even tries to pronounce some of them\. How do I fix this?**
 
-Amazon Polly does not recognize IPA symbols unless SSML \(Speech Synthesis Markup Language\) is used to delineate it\. However, since small sections of IPA symbols usually indicate a pronunciation guide for a reader, in many cases, this section can be safely removed from the input text by simple deletion\. You can also use a lexicon to change the way this is rendered by Amazon Polly\. For more information, see [Using SSML](ssml.md) and [Managing Lexicons](managing-lexicons.md)\.
-
-## Voices<a name="faqs-voices"></a>
-
-**Q: How can I listen to a voice to see if I want to use it?**
-
-You can listen to any voice supported by Amazon Polly by synthesizing a short text through the Amazon Polly console or by using the `synthesize-speech` API with the AWS CLI\. You can select any supported voice in the console and listen to the voice by running a sample text\. For more information, see [Exercise 1: Synthesizing Speech Quick Start \(Console\)](getting-started-console.md#quick-start-text-to-speech)\. In the AWS CLI, you can use the `voice-id` of the voice you want to hear when you run the `synthesize-speech` API\. For more information, see [Step 3\.2: Getting Started Exercise Using the AWS CLI](get-started-cli-exercise.md)\.
-
-**Q: How long will the voices be available? If I choose a voice for my application now, will it still be available in five years?**
-
-To ensure continuous support for customers, we don't plan to retire any voices\. This applies to both currently available and future voices\. 
+Amazon Polly does not recognize IPA symbols unless SSML \(Speech Synthesis Markup Language\) is used to delineate it\. However, since small sections of IPA symbols usually indicate a pronunciation guide for a reader, in many cases, this section can be safely removed from the input text by simple deletion\. You can also use a lexicon to change the way this is rendered by Amazon Polly\. For more information, see [Generating Speech from SSML Documents](ssml.md) and [Managing Lexicons](managing-lexicons.md)\.
 
 ## Data Security and Confidentiality<a name="faqs-security"></a>
+
+**Q: Can I opt out of request logging with request APIs?**
+
+Yes, you can request that by contacting [AWS Support](https://aws.amazon.com/contact-us/?nc2=h_l2_su)\. 
 
 **Q: Can I choose to mask certain data fields so that they are not stored?\(For instance, if I convert text with some sensitive data, but don't want it stored on the AWS systems, can I mask it?**
 

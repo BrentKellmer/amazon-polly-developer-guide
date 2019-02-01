@@ -14,7 +14,7 @@ DELETE /v1/lexicons/LexiconName HTTP/1.1
 
 The request requires the following URI parameters\.
 
- ** Name **   
+ ** [Name](#API_DeleteLexicon_RequestSyntax) **   <a name="polly-DeleteLexicon-request-Name"></a>
 The name of the lexicon to delete\. Must be an existing lexicon in the region\.  
 Pattern: `[0-9A-Za-z]{1,20}` 
 
@@ -46,21 +46,12 @@ HTTP Status Code: 500
 ## See Also<a name="API_DeleteLexicon_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/DeleteLexicon) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/DeleteLexicon) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/DeleteLexicon) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/DeleteLexicon) 

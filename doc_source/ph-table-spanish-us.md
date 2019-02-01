@@ -32,13 +32,13 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | ʒ | Z | Voiced postalveolar fricative | vi**s**ion | S | 
 |  **Vowels**  | 
 | ə | @ | Mid central vowel | **a**ren**a** | @ | 
-| ɚ | @' | Mid central r\-colored vowel | read**er** | @ | 
+| ɚ | @` | Mid central r\-colored vowel | read**er** | @ | 
 | æ | \{ | Near open\-front unrounded vowel | tr**a**p | a | 
 | aɪ | aI | Diphthong | pr**i**ce | a | 
 | aʊ | aU | Diphthong | m**ou**th | a | 
 | ɑ | A | Long open\-back unrounded vowel | f**a**ther | a | 
 | eɪ | eI | Diphthong | f**a**ce | e | 
-| ɝ | 3' | Open mid\-central unrounded r\-colored vowel | n**ur**se | E | 
+| ɝ | 3` | Open mid\-central unrounded r\-colored vowel | n**ur**se | E | 
 | ɛ | E | Open mid\-front unrounded vowel | dr**e**ss | E | 
 | i: | i | Long close front unrounded vowel | fl**ee**ce | i | 
 | ɪ | I | Near\-close near\-front unrounded vowel | k**i**t | i | 

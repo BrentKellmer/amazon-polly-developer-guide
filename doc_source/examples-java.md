@@ -5,11 +5,8 @@ This example shows how to use Amazon Polly to stream speech from a Java\-based a
 The code shown covers major tasks, but does only minimal error checking\. If Amazon Polly encounters an error, the application terminates\. 
 
 To run this example application, you need the following:
-
 +  Java 8 Java Development Kit \(JDK\) 
-
 +  [AWS SDK for Java ](https://aws.amazon.com/documentation/sdk-for-java/) 
-
 +  [Apache Maven](http://maven.apache.org/) 
 
 **To test the application**

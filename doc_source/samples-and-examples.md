@@ -2,7 +2,7 @@
 
 This section provides code samples and example applications that you can use to explore Amazon Polly\. 
 
-
+**Topics**
 + [Sample Code](sample-code-overall.md)
 + [Example Applications](examples-for-using-polly.md)
 

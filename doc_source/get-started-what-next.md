@@ -9,11 +9,8 @@ To test the Python example code, you need the AWS SDK for Python \(Boto\)\. For 
 **To test Example Python Code**
 
 The following Python code example does the following:
-
 + Uses the AWS SDK for Python \(Boto\) to send a `SynthesizeSpeech` request to Amazon Polly \(by providing simple text as input\)\. 
-
 + Accesses the resulting audio stream in the response and saves the audio to a file on your local disk \(`speech.mp3`\)\.
-
 + Plays the audio file with the default audio player for your local system\.
 
 Save the code to a file \(example\.py\) and run it\.

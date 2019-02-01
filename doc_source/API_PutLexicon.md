@@ -11,7 +11,7 @@ PUT /v1/lexicons/LexiconName HTTP/1.1
 Content-type: application/json
 
 {
-   "Content": "string"
+   "[Content](#polly-PutLexicon-request-Content)": "string"
 }
 ```
 
@@ -19,7 +19,7 @@ Content-type: application/json
 
 The request requires the following URI parameters\.
 
- ** Name **   
+ ** [Name](#API_PutLexicon_RequestSyntax) **   <a name="polly-PutLexicon-request-Name"></a>
 Name of the lexicon\. The name must follow the regular express format \[0\-9A\-Za\-z\]\{1,20\}\. That is, the name is a case\-sensitive alphanumeric string up to 20 characters long\.   
 Pattern: `[0-9A-Za-z]{1,20}` 
 
@@ -27,7 +27,7 @@ Pattern: `[0-9A-Za-z]{1,20}`
 
 The request accepts the following data in JSON format\.
 
- ** Content **   
+ ** [Content](#API_PutLexicon_RequestSyntax) **   <a name="polly-PutLexicon-request-Content"></a>
 Content of the PLS lexicon as string data\.  
 Type: String  
 Required: Yes
@@ -75,21 +75,12 @@ HTTP Status Code: 400
 ## See Also<a name="API_PutLexicon_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/PutLexicon) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/PutLexicon) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/PutLexicon) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/PutLexicon) 

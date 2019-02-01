@@ -5,7 +5,7 @@ This topic provides examples of identity\-based policies that demonstrate how an
 **Important**  
 We recommend that you first review the introductory topics that explain the basic concepts and options available to manage access to your Amazon Polly resources\. For more information, see [Overview of Managing Access Permissions to Your Amazon Polly Resources](access-control-overview.md)\. 
 
-
+**Topics**
 + [Permissions Required to Use the Amazon Polly Console](#console-permissions)
 + [AWS Managed \(Predefined\) Policies for Amazon Polly](#access-policy-aws-managed-policies)
 + [Customer Managed Policy Examples](#access-policy-customer-managed-examples)
@@ -37,9 +37,7 @@ The following shows an example of a permissions policy\.
 ```
 
 The policy has two statements:
-
 + The first statement grants permission for three Polly actions \(`polly:GetLexicon`, `polly:DeleteLexicon`, and `polly:ListLexicons` on any lexicon\. Use of the wildcard character \(\*\) as the resource grants universal permissions for these actions across all regions and lexicons owned by this account\.
-
 + The second statement explicitly denies permission for one Polly action \(`polly:PutLexicon`\)\. The ARN shown as the resource specifically applies this permission all lexicons that begin with the letters "my" that are in the region `us-east-2`\. 
 
 For a table showing all of the Amazon Polly API operations and the resources that they apply to, see [Amazon Polly API Permissions: Actions, Permissions, and Resources Reference](api-permissions-reference.md)\. 
@@ -70,12 +68,10 @@ To use the Amazon Polly console, you need to grant permissions to all the Amazon
 
 ## AWS Managed \(Predefined\) Policies for Amazon Polly<a name="access-policy-aws-managed-policies"></a>
 
-AWS addresses many common use cases by providing standalone IAM policies that are created and administered by AWS\. These AWS managed policies grant necessary permissions for common use cases so that you can avoid having to investigate what permissions are needed\. For more information, see [AWS Managed Policies](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*\. 
+AWS addresses many common use cases by providing standalone IAM policies that are created and administered by AWS\. These AWS managed policies grant necessary permissions for common use cases so that you can avoid having to investigate what permissions are needed\. For more information, see [AWS Managed Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*\. 
 
 The following AWS managed policies, which you can attach to users in your account, are specific to Amazon Polly:
-
 + **AmazonPollyReadOnlyAccess** – Grants read only access to resources, allows listing lexicons, fetching lexicons, listing available voices and synthesizing speech \(including, applying lexicons to the synthesized speech\)\. 
-
 + **AmazonPollyFullAccess** – Grants full access to resources and all the supported operations\.
 
 **Note**  
@@ -90,7 +86,7 @@ In this section, you can find example user policies that grant permissions for v
 **Note**  
 All examples use the us\-east\-2 region and contain fictitious account IDs\.
 
-
+**Topics**
 + [Example 1: Allow All Amazon Polly Actions](#example-managed-policy-service-admin)
 + [Example 2: Allow All Polly Actions Except DeleteLexicon](#example-managed-policy-full-permissions-no-delete)
 + [Example 3: Allow DeleteLexicon](#example-managed-policy-delete-all-regions)

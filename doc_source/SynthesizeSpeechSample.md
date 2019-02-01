@@ -1,8 +1,8 @@
 # SynthesizeSpeech<a name="SynthesizeSpeechSample"></a>
 
-The following Java code sample show how to use Java\-based applications to synthesize speech from for inputed text\. 
+The following Java code sample show how to use Java\-based applications to synthesize speech with shorter texts for near\-real time processing\. 
 
-For more information, see the reference for [http://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html](http://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html) API\. 
+For more information, see the reference for [https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html](https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

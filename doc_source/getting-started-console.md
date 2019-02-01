@@ -2,7 +2,7 @@
 
 The Amazon Polly console is the easiest way to get started testing and using Amazon Polly's speech synthesizing\. The Amazon Polly console supports synthesizing speech from either plain text or SSML input\.
 
-
+**Topics**
 + [Exercise 1: Synthesizing Speech Quick Start \(Console\)](#quick-start-text-to-speech)
 + [Exercise 2: Synthesizing Speech \(Plain Text Input\)](#plain-text-to-speech-console)
 + [Next Step](#gs-console-next-step)
@@ -24,11 +24,8 @@ The Quick Start walks you through the fastest way to test the Amazon Polly speec
 1. Choose **Listen to speech**\.
 
 For more in\-depth testing, see the following topics:
-
 + [Exercise 2: Synthesizing Speech \(Plain Text Input\)](#plain-text-to-speech-console)
-
-+ [Using SSML with the Amazon Polly Console](ssml-to-speech-console.md#ssml-console-exercise)
-
++ [Using SSML \(Console\)](ssml-to-speech-console.md)
 + [Applying Lexicons Using the Console \(Synthesize Speech\)](managing-lexicons-console.md#managing-lexicons-console-synthesize-speech)
 
 ## Exercise 2: Synthesizing Speech \(Plain Text Input\)<a name="plain-text-to-speech-console"></a>
@@ -60,10 +57,8 @@ The following procedure synthesizes speech using plain text input\. Note how "W3
    1. To change to a different file format, choose **Change file format**, choose the file format you want, and then choose **Change**\.
 
 For more in\-depth examples, see the following topics:
-
 + [Applying Lexicons Using the Console \(Synthesize Speech\)](managing-lexicons-console.md#managing-lexicons-console-synthesize-speech)
-
-+ [Using SSML with the Amazon Polly Console](ssml-to-speech-console.md#ssml-console-exercise)
++ [Using SSML \(Console\)](ssml-to-speech-console.md)
 
 ## Next Step<a name="gs-console-next-step"></a>
 

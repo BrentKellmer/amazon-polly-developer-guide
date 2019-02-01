@@ -12,7 +12,7 @@ GET /v1/lexicons/LexiconName HTTP/1.1
 
 The request requires the following URI parameters\.
 
- ** Name **   
+ ** [Name](#API_GetLexicon_RequestSyntax) **   <a name="polly-GetLexicon-request-Name"></a>
 Name of the lexicon\.  
 Pattern: `[0-9A-Za-z]{1,20}` 
 
@@ -27,17 +27,17 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
-   "Lexicon": { 
-      "Content": "string",
-      "Name": "string"
+   "[Lexicon](#polly-GetLexicon-response-Lexicon)": { 
+      "[Content](API_Lexicon.md#polly-Type-Lexicon-Content)": "string",
+      "[Name](API_Lexicon.md#polly-Type-Lexicon-Name)": "string"
    },
-   "LexiconAttributes": { 
-      "Alphabet": "string",
-      "LanguageCode": "string",
-      "LastModified": number,
-      "LexemesCount": number,
-      "LexiconArn": "string",
-      "Size": number
+   "[LexiconAttributes](#polly-GetLexicon-response-LexiconAttributes)": { 
+      "[Alphabet](API_LexiconAttributes.md#polly-Type-LexiconAttributes-Alphabet)": "string",
+      "[LanguageCode](API_LexiconAttributes.md#polly-Type-LexiconAttributes-LanguageCode)": "string",
+      "[LastModified](API_LexiconAttributes.md#polly-Type-LexiconAttributes-LastModified)": number,
+      "[LexemesCount](API_LexiconAttributes.md#polly-Type-LexiconAttributes-LexemesCount)": number,
+      "[LexiconArn](API_LexiconAttributes.md#polly-Type-LexiconAttributes-LexiconArn)": "string",
+      "[Size](API_LexiconAttributes.md#polly-Type-LexiconAttributes-Size)": number
    }
 }
 ```
@@ -48,11 +48,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** Lexicon **   
+ ** [Lexicon](#API_GetLexicon_ResponseSyntax) **   <a name="polly-GetLexicon-response-Lexicon"></a>
 Lexicon object that provides name and the string content of the lexicon\.   
 Type: [Lexicon](API_Lexicon.md) object
 
- ** LexiconAttributes **   
+ ** [LexiconAttributes](#API_GetLexicon_ResponseSyntax) **   <a name="polly-GetLexicon-response-LexiconAttributes"></a>
 Metadata of the lexicon, including phonetic alphabetic used, language code, lexicon ARN, number of lexemes defined in the lexicon, and size of lexicon in bytes\.  
 Type: [LexiconAttributes](API_LexiconAttributes.md) object
 
@@ -70,21 +70,12 @@ HTTP Status Code: 500
 ## See Also<a name="API_GetLexicon_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/GetLexicon) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/GetLexicon) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/GetLexicon) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/GetLexicon) 
